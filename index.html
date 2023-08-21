@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Signup Page</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Personal Blogging app</div>
+        <div class="login-link"><a href="login.html">Login</a></div>
+    </nav>
+    <div class="heading">
+        <h2>Signup</h2>
+    </div>
+
+    <div class="container">
+        <form id="signupForm">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" minlength="3" maxlength="20"
+                required>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" minlength="1" maxlength="20"
+                required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" minlength="8"
+                pattern="^(?=.*[a-z])(?=.*[A-Z]).{8,}$" required
+                title="Password must be at least 8 characters long and include at least one uppercase and one lowercase letter">
+            <input type="password" id="repeatPassword" name="repeatPassword" placeholder="Repeat Password" required>
+            <button id="signup_btn" type="submit">Signup</button>
+        </form>
+    </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore.js"></script> -->
+    <script type="module" src="signup.js"></script>
+
+</body>
+
+</html>

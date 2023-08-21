@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Personal Blogging app</div>
+        <div class="logout"><button id="logout_btn">Logout</button></div>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Your Dashboard</h2>
+        <h3>Create a New Blog</h3>
+        <form id="addBlogForm">
+            <label for="blogTitle">Blog Title:</label>
+            <input type="text" id="blogTitle" required minlength="5" maxlength="50">
+            <label for="blogBody">Blog Body:</label>
+            <textarea id="blogBody" required minlength="100" maxlength="3000"></textarea>
+            <button id="submit" type="submit">Post Blog</button>
+        </form>
+        <h3>Your Blogs</h3>
+        <div class="blogs" id="blogsList"></div>
+    </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore.js"></script> -->
+    <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>

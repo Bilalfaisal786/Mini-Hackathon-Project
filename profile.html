@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ... -->
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Personal Blogging app</div>
+        <div>Update Your Profile</div>
+    </nav>
+    <!-- Profile update form -->
+    <form id="profileForm">
+        <label for="displayName">Display Name:</label>
+        <input type="text" id="displayName" required><br>
+        <label for="profilePhoto">Profile Photo:</label>
+        <input type="file" id="profilePhoto" accept="image/*"><br>
+        <img id="previewImage" src="" alt="Profile Photo Preview"><br>
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword"><br>
+        <button type="submit">Update Profile</button>
+    </form>
+
+    <!-- JavaScript for profile functionality -->
+    <script type="module" src="profile.js"></script>
+</body>
+
+</html>
